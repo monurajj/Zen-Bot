@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0eb90948d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ---------------------Header------------------------- -->
+<main>
+
+    <div id="header">
+        <!-- <div id="glowing-circle"></div> -->
+        <div class="container">
+            <nav>
+                <img id="glowing-circle" class="logo" src="assets/logo.png" alt="Mental health is vital for quality of life, productivity, and relationships. It affects physical health, resilience, and economic well-being. Addressing mental health reduces stigma, fosters prevention, and builds healthier societies." />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Test Yourself</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#chatbot">Chatbot</a></li>
+                    <li><a href="#games">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- ---------about---------- -->
+
+
+
+
+    <div id="about">
+      <div class="columnns">
+        <div class="con">
+            <h1 class="sub-title">About Us</h1>
+            <p>
+                Welcome to our Mental Health Solver service,<br> where we prioritize
+                your well-being. Our platform offers<br> personalized solutions for
+                navigating life's challenges, providing<br> confidential support and
+                resources. From coping strategies to professional<br> guidance, we're
+                dedicated to enhancing your mental health journey. <br> Join us in
+                fostering resilience and promoting a healthier, happier you.
+            </p>
+        </div>
+    
+        <div class="aboutimage">
+            <img src="assets/Mentoring-Pic-1.jpg" alt="">
+        </div>
+    </div>  
+    </div>
+
+
+
+
+
+
+<div id="chatbot">
+    <div class="wrapper">
+        <div class="title">AI Counselor ZenBot</div>
+        <!-- <img src="assets/ZenBot2.png"> -->
+        <div class="box">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="msg">
+                    <p>Hello, How are you?</p>
+                </div>
+            </div>
+            <br clear="both">
+            <div class="item right">
+                <div class="msg">
+                    <p>I'm great! , How can i help you?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-area">
+            <div class="input-field">
+                <input type="text" placeholder="Type your message" required>
+                <button class="send">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------games---------------------- -->
+<div class="gameone">
+    <button id="submitBtn" onclick="moveButton()">Submit</button>
+  </div>
+<!-- ----------------------------------contact---------------------------- -->
+
+<div id="contact">
+    
+    <form class="forming">
+        <h2> <i class="fa-solid fa-handshake"> </i> Get in touch <i class="fa-solid fa-handshake"></i></h2>
+        <div class="input-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <label for="name"></label>
+        </div>
+        <div class="input-group">
+        <input type="text" id="number" placeholder="Phone No." required>
+        <label for="number"></label>
+        </div>
+        <div class="input-group">
+        <input type="email" id="email" placeholder="Email Id" required>
+        <label for="email"></label>
+        </div>
+        <div class="input-group">
+        <textarea id="message" rows="8" placeholder="Your Message"></textarea>
+        <label for="message"> </label>
+        </div>
+        <button id="submit-btn" type="submit">SUBMIT</button>
+        <div id="sub"></div>
+    </form>
+    
+</div>
+
+
+
+
+</main>
+    
+<!-- ---------------------questions-------------------- -->
+<div class="moodtracker">
+    
+  <div class="quiz-container">
+    <h1>Mood Tracker</h1>
+    <button class="back">Back</button>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. I am feeling calm and relaxed.</p>
+        <label class="container">
+          <input type="radio" name="question1" value="-2" required>
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question1" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question1" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question1" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question1" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>2. I am feeling overwhelmed or stressed.
+        </p>
+        <label class="container">
+          <input type="radio" name="question2" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question2" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question2" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question2" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question2" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>3. I am feeling confident in my abilities.</p>
+        <label class="container">
+          <input type="radio" name="questio3" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question3" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question3" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question3" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question3" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>4. I have trouble concentrating or focusing.</p>
+        <label class="container">
+          <input type="radio" name="question4" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question4" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question4" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question4" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question4" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>5. I am feeling motivated and enthusiastic about my goals.</p>
+        <label class="container">
+          <input type="radio" name="question5" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question5" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question5" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question5" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question5" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>6. I am feeling lonely or isolated.</p>
+        <label class="container">
+          <input type="radio" name="question6" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question6" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question6" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question6" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question6" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>7. I useually experience frequent mood swings.</p>
+        <label class="container">
+          <input type="radio" name="question7" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question7" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question7" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question7" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question7" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>8. I often worry about the future..</p>
+        <label class="container">
+          <input type="radio" name="question8" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question8" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question8" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question8" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question8" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>9. I feel satisfied with my personal relationships.</p>
+        <label class="container">
+          <input type="radio" name="question9" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question9" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question9" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question9" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question9" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <div class="question">
+        <p>10. I find it easy to relax and unwind.</p>
+        <label class="container">
+          <input type="radio" name="question10" value="-2">
+          <span class="checkmark">Strongly Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question10" value="-1">
+          <span class="checkmark">Disagree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question10" value="0">
+          <span class="checkmark">Neutral</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question10" value="1">
+          <span class="checkmark">Agree</span><br>
+        </label>
+        <label class="container">
+          <input type="radio" name="question10" value="2">
+          <span class="checkmark">Strongly Agree</span><br>
+        </label>
+      </div>
+      <!-- Add more questions similarly -->
+    </form>
+    
+    <button id="calculate-btn">Show Result</button>
+    <button id="reset-btn">Reset</button>
+    <div id="result"></div>
+    <div id="mood-result"></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="zero">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Feeling Lonely 😶</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/walking.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Walking</h3>
+                    <p>
+                        Taking a leisurely walk can help clear the mind, improve circulation, and boost energy levels without exerting too much effort.
+                    </p>
+                    <a href="https://youtu.be/9r5MjoxyUus?si=S7fnvbC2xICglU50"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/strthing.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Stretching</h3>
+                    <p>
+                        Engaging in gentle stretching exercises can promote flexibility, reduce muscle tension, and create a sense of relaxation.
+                    </p>
+                    <a href="https://youtu.be/oKzGfuqm57c?si=HPWcW8O0fdnq50mW"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/breathing.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Deep Breathing</h3>
+                    <p>
+                        Practicing deep breathing exercises or meditation can help calm the mind, reduce stress, and promote a sense of balance.
+                    </p>
+                    <a href="https://youtu.be/qnXX7boW_5k?si=Hhb7guUTN1PM1kap"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zero-half">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Slightly Happy 🙂 </h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/yoga.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Yoga</h3>
+                    <p>
+                        Participating in a gentle yoga session can help increase feelings of happiness, promote relaxation, and improve overall well-being.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/dancing.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Dancing</h3>
+                    <p>
+                        Putting on some upbeat music and dancing around can be a fun way to elevate mood, release endorphins, and boost energy levels.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/nature walk.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Nature Walk</h3>
+                    <p>
+                        Going for a walk in nature, such as a park or forest, can enhance feelings of happiness, reduce stress, and foster a sense of connection to the environment.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="half-one">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Good level of happiness 😇 </h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/cycling.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Cycling</h3>
+                    <p>
+                        Going for a bike ride, whether outdoors or on a stationary bike, can increase feelings of happiness, improve cardiovascular health, and boost energy levels.
+                    </p>
+                    <a href="https://youtu.be/Mr4m7ZoVfwc?si=v6ZGO2RiqfRW0FB6" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/strthing.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Strength Training</h3>
+                    <p>
+                        Incorporating strength training exercises, such as lifting weights or using resistance bands, can enhance mood, build muscle strength, and increase confidence.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/groupfitness.jpeg" alt="loading image...">
+                    <div class="layer">
+                    <h3>Group Fitness Class</h3>
+                    <p>
+                        Joining a group fitness class, such as aerobics, Zumba, or circuit training, can provide social interaction, motivation, and a sense of accomplishment.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="one-onehalf">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- You are feeling very happy 🤩</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/outdoor.jpg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Outdoor Adventure</h3>
+                    <p>
+                        Engaging in adventurous activities like hiking, rock climbing, or kayaking can amplify feelings of happiness, excitement, and satisfaction.
+                    </p>
+                    <a href="https://youtu.be/Mr4m7ZoVfwc?si=v6ZGO2RiqfRW0FB6" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/httf.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Interval Training</h3>
+                    <p>
+                        Performing high-intensity interval training (HIIT) workouts can release endorphins, increase energy levels, and enhance mood while providing a challenging workout.
+                    </p>
+                    <a href="https://youtu.be/m6Oo_OL7nBM?si=TgP-piiZiMFTOu7C" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/mindfull.png" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Mindful Movement</h3>
+                    <p>
+                        Practicing mindful movement activities such as Tai Chi or Qigong can promote inner peace, reduce stress, and cultivate a deep sense of happiness and well-being.
+                    </p>
+                    <a href="https://youtu.be/g-W7XoBhxOM?si=n6eGSEtYhSrhuvQJ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="onehalf-two">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Excellent : You are really doing well 🙃</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/gratitude.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Gratitude Journaling</h3>
+                    <p>
+                        Taking time to reflect on things they're grateful for can reinforce feelings of happiness, contentment, and fulfillment.
+                    </p>
+                    <a href="https://youtu.be/Mr4m7ZoVfwc?si=v6ZGO2RiqfRW0FB6" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/kindness.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Random Acts of Kindness</h3>
+                    <p>
+                        Performing acts of kindness for others can boost happiness levels, create a sense of purpose, and foster meaningful connections with others.
+                    </p>
+                    <a href="https://youtu.be/m6Oo_OL7nBM?si=TgP-piiZiMFTOu7C" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/art.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Expressive Arts</h3>
+                    <p>
+                        Engaging in creative activities like painting, writing, or playing music can provide an outlet for self-expression, enhance mood, and promote a sense of joy and fulfillment.
+                    </p>
+                    <a href="https://youtu.be/g-W7XoBhxOM?si=n6eGSEtYhSrhuvQJ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="two">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Outstanding, You really enjoying your life 🥳</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="assets/enjoying.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Enjoy your life</h3>
+                    <p>
+                        You are really doing well feel free and enjoy your life.
+                    </p>
+                    <a href="https://youtu.be/Mr4m7ZoVfwc?si=v6ZGO2RiqfRW0FB6" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/help.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Help others</h3>
+                    <p>
+                       Helping others is reallynice work it will give you happiness for long term.
+                    </p>
+                    <a href="https://youtu.be/m6Oo_OL7nBM?si=TgP-piiZiMFTOu7C" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/family.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Family time</h3>
+                    <p>
+                       Use your life with your family members , plan your vacation and enjoy your memorable time.
+                    </p>
+                    <a href="https://youtu.be/g-W7XoBhxOM?si=n6eGSEtYhSrhuvQJ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ------------------minus---------------------- -->
+<div class="min-zero-zerofive">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Slightly Sad 🫤</h1>
+            <div class="work-list">
+  
+                <div class="work">
+                    <img src="assets/lightexercise.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Light Aerobic Exercise</h3>
+                    <p>
+                      Engaging in low-impact aerobic activities like brisk walking, swimming, or cycling can help boost endorphins, improve circulation, and alleviate feelings of sadness.
+                    </p>
+                    <a href="https://youtu.be/ahW-Ug228NE?si=nO5mc4byTnT31JRN" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/gental yoga.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Gentle Yoga</h3>
+                    <p>
+                      Practicing gentle yoga poses and breathing exercises can promote relaxation, reduce stress, and create a sense of calmness during periods of mild sadness.
+  
+                    </p>
+                    <a href="https://youtu.be/6PjCLewMmIE?si=kQog7HKlERf7lWpD" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/mindfull walking.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Mindful Walking</h3>
+                    <p>
+                      Taking a mindful walk, focusing on the present moment and surroundings, can help ease negative thoughts, enhance mood, and provide a sense of grounding.
+  
+                    </p>
+                    <a href="https://youtu.be/AwbRERIzt6c?si=UYOHRjr5M29LSzlj" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="min-zerofive-one">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Moderately Sad 😬</h1>
+            <div class="work-list">
+  
+                <div class="work">
+                    <img src="assets/dancetherepy.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Dance Therapy</h3>
+                    <p>
+                      Participating in dance therapy or simply dancing to uplifting music can release tension, increase endorphins, and improve mood by expressing emotions through movement.
+                    </p>
+                    <a href="https://youtu.be/J9gAe9H5Rok?si=di-gUPoyLdVWnKg9" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/outdoorexercise.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Outdoor Exercise</h3>
+                    <p>
+                      Exercising outdoors, such as jogging in a scenic area or practicing outdoor yoga, can boost mood by providing exposure to natural light, fresh air, and the beauty of nature.
+  
+                    </p>
+                    <a href="https://youtu.be/N_s4PjCRTsc?si=vfT3i78TnLu3zCHT" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/groupexercisee.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Group Exercise Classes</h3>
+                    <p>
+                      Joining group exercise classes like dance fitness, kickboxing, or boot camp can provide social support, motivation, and a sense of belonging, which can be uplifting during times of sadness.
+  
+                    </p>
+                    <a href="https://youtu.be/uS2XpgGOPuA?si=Rjsw5GHKnUI16zYx" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="min-one-onefive">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Very Sad 🥴</h1>
+            <div class="work-list">
+  
+                <div class="work">
+                    <img src="assets/wateractivities.jpg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Water Activities</h3>
+                    <p>
+                      Engaging in water-based activities like swimming, water aerobics, or simply spending time in a pool can provide a sense of weightlessness, relaxation, and emotional relief.
+                    </p>
+                    <a href="https://youtu.be/AQy_c30lNjI?si=EvEQ1IjZoZP_Q3vZ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/meditative.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Meditative Movement</h3>
+                    <p>
+                      Practicing meditative movement activities such as Tai Chi, Qigong, or Pilates can help calm the mind, reduce anxiety, and promote emotional healing during periods of intense sadness.
+  
+                    </p>
+                    <a href="https://youtu.be/NsZaY-EMpiA?si=GBpIFwIW6gFoRGe9" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/imersive nature.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Nature Immersion</h3>
+                    <p>
+                      Spending time in natural environments like parks, forests, or gardens can soothe the soul, lift spirits, and provide a sense of solace and connection to the earth.
+  
+                    </p>
+                    <a href="https://youtu.be/1ZAxPR9BVNA?si=NX6J8-2YMmNV1Ph2" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="min-onefive-two">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Result:- Extremely Sad 🤧</h1>
+            <div class="work-list">
+  
+                <div class="work">
+                    <img src="assets/gentalstret hing.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Gentle Stretching</h3>
+                    <p>
+                      Performing gentle stretching exercises, focusing on areas of tension and discomfort, can help release physical and emotional stress, promote relaxation, and provide a sense of comfort.
+                    </p>
+                    <a href="https://youtu.be/AQy_c30lNjI?si=EvEQ1IjZoZP_Q3vZ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/resorativeyoga.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Restorative Yoga</h3>
+                    <p>
+                      Practicing restorative yoga poses supported by props like bolsters and blankets can offer deep relaxation, emotional release, and a sense of nurturance during times of profound sadness.
+  
+                    </p>
+                    <a href="https://youtu.be/40bPxbFUCj4?si=bcjJNvxYojp18zF4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/breathingyoga.jpeg" alt="loading image..."">
+                    <div class="layer">
+                    <h3>Breathing Exercises</h3>
+                    <p>
+                      Engaging in deep breathing exercises, such as diaphragmatic breathing or alternate nostril breathing, can help calm the nervous system, reduce feelings of anxiety, and provide a sense of inner peace and stability.
+  
+                    </p>
+                    <a href="https://youtu.be/395ZloN4Rr8?si=2LCq-jw6jNSWaeal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
